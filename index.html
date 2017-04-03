@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Personinfo</title>
+    <script src="javascript.js"></script>
+    <script src="Labb1.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+      <div id="headerblock">
+        <h1 id="headline">Personinfo!</h1>
+      </div>
+      <div id="menu">
+          <button id="add" class="menuButton">Lägg till</button>
+          <button id="list" class="menuButton">Alla inlagda</button>
+          <button id="about" class="menuButton">Om</button>
+      </div>
+      <div id="main">
+        <div id="addView">
+          <h2 id="addText">Skriv in namn och personnummer och tryck på lägg till</h2>
+        <input type="text" id="nameInput" class="inputFields" placeholder="Namn"><br>
+        <input type="text" id="ssnInput" class="inputFields" placeholder="Personnummer"><br>
+        <button id="addButton" disabled>Lägg till</button>
+        </div>
+        <div id="listView" style="display: none">
+          <h2 id="listText">Alla personer som är inlagda i systemet</h2>
+          <table id="personList">
+            <tr> 
+              <th>Namn</th>
+              <th>Personnummer</th>
+              <th>Ålder</th>
+            </tr>
+          </table>
+        </div>
+        <div id="aboutView" style="display: none">
+          <button>Test about</button>
+        </div>
+      </div>
+  </body>
+</html>

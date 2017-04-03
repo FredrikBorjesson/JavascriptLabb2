@@ -1,0 +1,119 @@
+body {
+    margin: 0px;
+    background-color: mediumseagreen;
+}
+
+#headerblock {
+    height: 100px;
+    width: 100%;
+    background-color: seagreen;
+}
+
+#headline {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: white;
+    opacity: 0.9;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+#menu{
+    width: 1000px;
+    height: 50px;
+    background-color: mediumseagreen;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.menuButton{
+    width: 33%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+#add {
+        background-color: seagreen;
+}
+
+#list {
+        background-color: mediumseagreen;
+}
+
+#about {
+    background-color: mediumseagreen;
+}
+
+#main {
+    height: 500px;
+    width: 1000px;
+    background-color: seagreen;
+    margin: auto;
+}
+
+#addText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    margin: 0px;
+}
+
+.inputFields {
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 30px;
+    width: 500px
+}
+
+#addButton {
+    width: 150px;
+    margin-left: 50px;
+    margin-top:30px;
+    height: 30px;
+    background-color: grey;
+    border: none;
+}
+
+#listText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    margin: 0px;
+}
+
+#personList {
+    list-style: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+    width: 500px;
+    margin: auto;
+    margin-top: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+}
+
+li {
+    background-color: mediumseagreen;
+    margin: 5px;
+}
