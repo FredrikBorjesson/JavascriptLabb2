@@ -1,18 +1,78 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("roboto/Roboto-Regular.ttf");
+}
+
 body {
     margin: 0px;
-    background-color: mediumseagreen;
+    background-image: url("images/skyline.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+#ballon {
+    position: fixed;
+    z-index: -1;
+    animation: ballonAnimation 30s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes ballonAnimation{
+    0% {top: 50px; left: -20%;}
+    100% {top: 50px; left: 100%;}
+}
+
+#cloud1 {
+    position: fixed;
+    z-index: -2;
+    animation: cloudAnimation1 35s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudAnimation1 {
+    0% {top: 50px; left: -20%}
+    100% {top: 50px; left: 100%}
+}
+
+#cloud2 {
+    position: fixed;
+    z-index: -3;
+    animation: cloudAnimation2 45s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudAnimation2 {
+     0% {top: 80px; left: -40%}
+    100% {top: 80px; left: 100%}
+}
+
+#cloud3 {
+    position: fixed;
+    z-index: -4;
+    animation: cloudAnimation3 60s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cloudAnimation3 {
+     0% {top: 80px; left: -20%}
+    100% {top: 80px; left: 100%}
 }
 
 #headerblock {
+    position: relative;
+    z-index: 1;
     height: 100px;
     width: 100%;
-    background-color: seagreen;
+    background-color: rgba(255, 255, 255, 0.5);
+    
 }
 
 #headline {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3em;
-    color: white;
     opacity: 0.9;
     margin: 0px;
     text-align: center;
@@ -21,47 +81,46 @@ body {
 }
 
 #menu{
-    width: 1000px;
+    display: flex;
+    width: 85%;
     height: 50px;
-    background-color: mediumseagreen;
     margin: auto;
     margin-top: 50px;
 }
 
 .menuButton{
-    width: 33%;
+    flex-basis: 0;
+    flex-grow: 1;
     height: 100%;
     margin: 0px;
     padding: 0px;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color: white;
 }
 
 #add {
-        background-color: seagreen;
+        background-color: rgba(255, 255, 255, 0.7);
 }
 
 #list {
-        background-color: mediumseagreen;
+        background-color: rgba(255, 255, 255, 0.3);
 }
 
 #about {
-    background-color: mediumseagreen;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #main {
-    height: 500px;
-    width: 1000px;
-    background-color: seagreen;
+    position: relative;
+    z-index: 1;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.7);
     margin: auto;
+    padding-bottom: 30px;
 }
 
 #addText{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
-    color: white;
     opacity: 0.9;
     text-align: center;
     vertical-align: middle;
@@ -76,19 +135,23 @@ body {
     width: 500px
 }
 
+.radioButtons {
+    margin-left: 50px; 
+    margin-top: 30px;
+}
+
 #addButton {
     width: 150px;
     margin-left: 50px;
     margin-top:30px;
     height: 30px;
-    background-color: grey;
+    background-color: white;
+    border-radius: 5px;
     border: none;
 }
 
 #listText {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
-    color: white;
     opacity: 0.9;
     text-align: center;
     vertical-align: middle;
@@ -96,10 +159,8 @@ body {
     margin: 0px;
 }
 
-#personList {
+#personTable {
     list-style: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     text-align: left;
     width: 500px;
@@ -110,10 +171,20 @@ body {
 }
 
 th, td {
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 li {
-    background-color: mediumseagreen;
     margin: 5px;
+}
+
+.deleteButton {
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    margin: auto;
+    margin-top: 30px;
+    width: 400px; 
 }
